@@ -56,6 +56,7 @@ body{
     font-family: Space Mono;
     font-size: 3.1em;
     font-style: normal;
+    text-transform: inherit;
     font-weight: 700;
     line-height: normal;
     letter-spacing: -2.24px;
@@ -64,10 +65,11 @@ body{
     color: #4F4F4F;
     font-family: Space Mono;
     font-size: 1.3em;
+    text-transform: inherit;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 10% 0; 
+    margin: 15% 0; 
     padding: 0 25% 0 0;
     letter-spacing: -0.84px;
 }
@@ -102,4 +104,38 @@ body{
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+}
+@media screen and (max-width : 768px) {
+    .contener-waper > main {
+        flex-direction: column;
+        margin: 100px 0 200px;
+    }
+    .contener-waper .left-conent, .right-conent{
+        width: 100% !important;
+    }
+    .conent-wap {
+        padding: 0 20%;
+    }
+    .contener-waper .right-conent p {
+        margin: 15% 0;
+        padding: 0 18% 0 0;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .conent-wap {
+        padding: 0 12%;
+    }
+}
+@media only screen and (max-width: 498px){
+    .conent-wap {
+        padding: 0 0%;
+    }
+}
+@media only screen and (max-width: 395px){
+    .contener-waper .right-conent p {
+        padding: 0 1% 0 0;
+    }
+    .contener-waper .right-conent h2 {
+        font-size: 2.5em;
+    }
 }
